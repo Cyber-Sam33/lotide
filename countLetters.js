@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetter = function(sentence){
-  results = {};
+  const results = {};
   sentence = sentence.toLowerCase();
   sentence = sentence.replace(/[.,?'/!:&();" ]/g,"");
 
