@@ -19,9 +19,9 @@ const takeUntil = function(array, callback) {
   const results = [];
 
   for (item of array){
-// console.log("item = ", item);
-// console.log("callback item = ", callback(item));
-// console.log("---------------");
+console.log("item = ", item);
+console.log("callback item = ", callback(item));
+console.log("---------------");
     if (callback(item)){
       return results;
     } else {
