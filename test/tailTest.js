@@ -1,13 +1,26 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
-assertEqual(result.length, 2);
+describe("#tail", () => {
+  it(`returns '["Lighthouse", "Labs"]' for '["Hello", "Lighthouse", "Labs"]'`, () => {
+    const str = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.deepEqual(str, ["Lighthouse", "Labs"]);
+  });
 
-console.log(tail([1, 2, 3, 4, 5]));
+  it(`returns '[2, 3, 4, 5]' for '[1, 2, 3, 4, 5]'`, () => {
+    const str = tail([1, 2, 3, 4, 5]);
+    assert.deepEqual(str, [2, 3, 4, 5]);
+  });
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-console.log(tail(words));//this creates a new tail array but leaves the original intact
-assertEqual(words.length, 3);// confirms original array still has 3 elements
+});
+
+
+
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+
+
+// console.log(tail([1, 2, 3, 4, 5]));
+
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// console.log(tail(words));//this creates a new tail array but leaves the original intact
+// assertEqual(words.length, 3);// confirms original array still has 3 elements
