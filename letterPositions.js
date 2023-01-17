@@ -40,10 +40,10 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// assertArraysEqual(letterPositions('hello').e, [1]);
-// sentence1 = "So foul and fair a day; I have not seen!"
-// sentence2 = "Lighthouse in the house."
-// console.log(letterPositions(sentence1));
-// console.log(letterPositions(sentence2));
+assertArraysEqual(letterPositions('hello').e, [1]);
+sentence1 = "So foul and fair a day; I have not seen!";
+sentence2 = "Lighthouse in the house.";
+console.log(letterPositions(sentence1));
+console.log(letterPositions(sentence2));
 
 module.exports = letterPositions;

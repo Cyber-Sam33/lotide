@@ -5,6 +5,9 @@ const map = require('./map');
 const letterPositions = require('./letterPositions');
 const findKey = require('./findKey');
 const countOnly = require('./countOnly');
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertObjectEqual = require('./assertObjectEqual');
 
 module.exports = {
   head,
@@ -13,5 +16,10 @@ module.exports = {
   map,
   letterPositions,
   findKey,
-  countOnly
+  countOnly,
+  assertEqual,
+  assertArraysEqual,
+  assertObjectEqual
 };
+
+// - `assertObjectEqual(...)`: compares two object for strict equality

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sam_codes/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide Project for LHL - Web Dev Bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/Cyber-Sam33/lotide.git"
   },
-  "author": "Issa S",
+  "author": "Issa, Sammi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Cyber-Sam33/lotide/issues"
